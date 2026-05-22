@@ -34,7 +34,7 @@ async function handleUpdate(message: any, env: Env): Promise<void> {
 
 	// Command Routing
 	if (message.text?.startsWith('/start')) {
-		const welcomeText = `🛡️ **OSINT Intelligence Bot Online**\n\nSubmit a target for analysis:\n1. Forward a message from the target\n2. Reply to a target's message\n3. Send a Telegram User ID (e.g., \`123456789\`)\n4. Send a Username (e.g., \`@username\`)`;
+		const welcomeText = `🛡️ **CYBERLINK Bot Online**\n\nSubmit a target for analysis:\n1. Forward a message from the target\n2. Reply to a target's message\n3. Send a Telegram User ID (e.g., \`123456789\`)\n4. Send a Username (e.g., \`@username\`)`;
 		await tg.call('sendMessage', { chat_id: chatId, text: welcomeText, parse_mode: 'Markdown' });
 		return;
 	}
